@@ -9,4 +9,50 @@
     Так стили написанные ниже будут иметь больший вес,
     чем стили в медиазапросе предпочтений пользователя
   */
+  --bg-color: #ffeef6;
+  --accent-color: #ff8dcb;
+  --main-color: #353430;
+  --transparent-main-color: #35343055;
+  --text-color: #353430;
+  --title-color: #ffc2e6;
+  --block-title-color: #353430;
+  --decor-color: #353430;
+  --bg-image: url(../images/cover-image-light.png);
+  --hover-border-color: #32312D66; /* Рамка с прозрачностью 0.4 для hover эффекта */
+}
+
+.page.theme_light .header__decor-item {
+  display: none;
+}
+
+@media (width >= 1024px) {
+  .page.theme_light .cover__title,
+  .page.theme_light .footer__title {
+    text-shadow: 4px 4px 0px #ff0070;
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --accent-color: #ff8dcb;
+    --transparent-main-color: #35343055;
+    --main-color: #353430;
+    --title-color: #ffc2e6;
+    --text-color: #353430;
+    --block-title-color: #353430;
+    --bg-image: url(../images/cover-image-light.png);
+    --bg-color: #ffeef6;
+    --hover-border-color: #32312D66; /* Рамка с прозрачностью 0.4 для hover эффекта */
+  }
+
+  .header__decor-item {
+    display: none;
+  }
+
+  @media (width >= 1024px) {
+    .cover__title,
+    .footer__title {
+      text-shadow: 4px 4px 0px #ff0070;
+    }
+  }
 }
