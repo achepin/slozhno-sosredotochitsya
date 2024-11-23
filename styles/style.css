@@ -20,6 +20,7 @@
   display: grid;
   grid-template-rows: 1fr auto 1fr;
   min-height: 668px;
+  height: 100vh;
   align-items: center;
   position: relative;
   padding: 10px;
@@ -85,7 +86,6 @@
 
 .header__theme-menu-button {
   background: transparent;
-  font-family: var(--font-family);
   font-style: normal;
   text-transform: lowercase;
   color: var(--main-color);
@@ -237,7 +237,7 @@
 
   .header {
     padding: 20px;
-    height: 1024px;
+    min-height: 1024px;
   }
   
   .cover__title {
@@ -322,7 +322,7 @@
 @media (width >= 1024px) {
 
   .header {
-    height: 768px;
+    min-height: 768px;
   }
   
   .header__theme-menu {
@@ -350,9 +350,9 @@
   .section_title {
     max-width: 315px;
   }
-
-  .card__picture {
-    grid-template-rows: 260px 315px 428px;
+  .card-why,
+  .card-how {
+    grid-template-columns:  1fr 2.06fr ;
   }
 
 }
